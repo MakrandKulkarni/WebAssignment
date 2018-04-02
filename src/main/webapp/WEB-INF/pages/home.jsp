@@ -10,12 +10,14 @@
 <script type="text/javascript">
 
 function getConfirmation(){
+	alert("Hello");
    var retVal = confirm("Do you want to delete the record ?");
+   alert(retVal);
    if( retVal == true ){
        return true;
    }
-   else{
-	   window.location="/ManageUserApps";
+   if(retVal==false){
+	  
        return false;
    }
 }
@@ -48,7 +50,7 @@ function getConfirmation(){
 					<td>${user.email}</td>
 					<td>${user.address}</td>
 					<td>${user.telephone}</td>
-					<td><a href="editUser?id=${user.id}">Edit</a>
+					<td><a class="mylink" href="editUser?id=${user.id}">Edit</a>
 						&nbsp;&nbsp;&nbsp;&nbsp; <a
 						href="deleteUser?id=${user.id}" onclick="getConfirmation();">Delete</a></td>
 
