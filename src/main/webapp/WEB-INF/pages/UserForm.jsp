@@ -26,8 +26,9 @@
 
 </head>
 <body>
-    <div align="center">
-        <h1>Add/Update User</h1>
+    <div style="border:1px solid black;font-size:15px;background-color:grey;height:100%;width:390px "> 
+        <h7>Add/Update User</h7>
+        <div style="border:1px solid black; height:100%;background-color:white;width:380px">  
         <form:form action="saveUser" method="post" modelAttribute="user" id="userform">
         <table>
             <form:hidden path="id"/>
@@ -57,13 +58,14 @@
                 <td><form:input path="telephone" /></td>
             </tr>
             <tr>
-                <td colspan="2" align="left"><input type="submit" value="Save"></td>
-                <td colspan="2" align="left"><input type="reset" value="Reset" onclick="resetform();"></td>
-                <td colspan="2" align="right"><input type="button" value="Cancel" onclick="gotohomepage();"></td>
+                <td><input type="submit" value="Save"></td>
+                <td><input type="reset" value="Reset" onclick="resetform();"></td>
+                <td><input type="button" value="Cancel" onclick="gotohomepage();"></td>
             </tr>
             
         </table>
         </form:form>
+        </div>
     </div>
 </body>
 </html>

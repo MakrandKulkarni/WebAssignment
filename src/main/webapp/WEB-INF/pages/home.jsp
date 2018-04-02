@@ -10,8 +10,7 @@
 <script type="text/javascript">
 
 function getConfirmation(){
-	alert("Hello");
-   var retVal = confirm("Do you want to delete the record ?");
+	var retVal = confirm("Do you want to delete the record ?");
    alert(retVal);
    if( retVal == true ){
        return true;
@@ -23,14 +22,15 @@ function getConfirmation(){
 }
 
 </script>
+
 </head>
 <body>
-	<div align="center">
-		<h4>
+	<div style="border:1px solid black;padding:20px;font-size:15px;background-color:grey;width:600px;height:100%">
+		<h7>
 			Add User <a href="newUser">here</a>
-		</h4>
-		<h1>User List</h1>
+		</h7>
 		
+	<div style="border:1px solid black; height:100%;background-color:white;width:580px"> 	
 		<table border="1">
 			<th>S.No</th>
 			<th>FirstName</th>
@@ -57,7 +57,7 @@ function getConfirmation(){
 				</tr>
 			</c:forEach>
 		</table>
-		
+		</div>
 	</div>
 </body>
 </html>

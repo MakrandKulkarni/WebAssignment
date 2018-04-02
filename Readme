@@ -1,1 +1,7 @@
-Read me first
+Read me
+
+Steps to run the application
+1) Create Schema in MySQL database
+2) Change the application.properties file accordingly
+3) Change the database and password.
+4) Run createtable.sql
